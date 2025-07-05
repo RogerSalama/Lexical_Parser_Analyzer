@@ -1,0 +1,39 @@
+def compute(n):
+    total = 0
+    i = 0
+    while i < n:
+        if i % 2 == 0:
+            total = total + i
+        else:
+            total = total - i
+        i = i + 1
+        if total > 10:
+            break
+    return total
+
+def report(limit):
+    count = 0
+    for x in range(limit):
+        if x == 3:
+            continue
+        print(x)
+        count = count + 1
+    return count
+
+def main():
+    result = compute(u)
+    print(result)
+
+    c = report(i)
+    print(c)
+
+    a = 2
+    b = 3
+    while a < 5:
+        for k in range(b):
+            print(a * k)
+        a = a + 1
+
+    return
+
+main()
